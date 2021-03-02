@@ -2,3 +2,4 @@
 *.sqlite3
 venv
 *.pyc
+proj_gestao_rh/__pycache__/
