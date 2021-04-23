@@ -3,3 +3,5 @@
 venv
 *.pyc
 proj_gestao_rh/__pycache__/
+media
+static
