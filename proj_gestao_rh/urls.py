@@ -3,12 +3,15 @@ from django.conf.urls.static import static
 from django.contrib import admin
 from rest_framework import routers
 from django.urls import path, include
-
+from apps.funcionarios.api.views import FuncionarioViewSet
 from apps.core import views
+from apps.registro_horas_extras.api.views import RegistroHoraExtraViewSet
 
 router = routers.DefaultRouter()
 router.register(r'users', views.UserViewSet)
 router.register(r'groups', views.GroupViewSet)
+router.register(r'api/funcionarios', FuncionarioViewSet)
+router.register(r'api/banco_horas', RegistroHoraExtraViewSet)
 
 urlpatterns = [
     path('', include('apps.core.urls')),
